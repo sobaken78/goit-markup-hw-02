@@ -15,20 +15,21 @@ body {
   color: var(--text-color);
 }
 
-h2 {
+.hidden-header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-button {
+.button {
   cursor: pointer;
   border: none;
   background: none;
 }
 
-address {
+.address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -65,6 +66,7 @@ address {
 /* Header Styles */
 
 .menu-link {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -82,12 +84,11 @@ address {
 /* Hero Styles */
 
 .hero {
-  width: 1600px;
-  height: 600px;
   background: var(--second-background-color);
 }
 
 .main-heading {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -97,6 +98,8 @@ address {
 }
 
 .hero--button {
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   padding: 10px 32px;
@@ -114,6 +117,7 @@ address {
 /* Features Styles */
 
 .features--heading {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -121,6 +125,7 @@ address {
 }
 
 .features--description {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -135,7 +140,16 @@ address {
   background: var(--background-color);
 }
 
+.team-card {
+  background: var(--white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team--name {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -143,6 +157,7 @@ address {
 }
 
 .team--position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -153,9 +168,7 @@ address {
 
 /* Footer Styles */
 
-footer {
-  width: 1600px;
-  height: 252px;
+.footer {
   background: var(--second-background-color);
 }
 
@@ -172,11 +185,17 @@ footer {
 }
 
 /* Portfolio Styles */
+.portfolio-item {
+  color: var(--text-color);
+}
 
 .portfolio-button {
+  font-family: "Roboto";
+  font-weight: 500;
   padding: 6px 22px;
-  background: #f5f4fa;
+  background: var(--background-color);
   border-radius: 4px;
+  border: none;
 }
 
 .portfolio-button:hover,
@@ -195,12 +214,14 @@ footer {
 }
 
 .project--title {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .project--description {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
